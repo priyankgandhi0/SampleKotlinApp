@@ -15,8 +15,6 @@ This project is a Android Kotlin application that demonstrates how to integrate 
 - XML with Constraint Layout
 - Glide for load network Image
 
-## API
--  https://dummyjson.com/products?limit=10&skip=20
 
 ## Requirements
 - Android Studio
