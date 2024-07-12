@@ -2,12 +2,18 @@
 
 This project is a Android Kotlin application that demonstrates how to integrate a single listing API with pagination. It provides a simple UI to display a list of Products fetched from the API.
 
-
 ## Features
 - Splash and Login screen to login and Signup screen to register
 - Fetches data from a single listing API.
 - Implements pagination.
 - Provides a simple and intuitive UI for displaying the fetched data.
+
+## App Architrecture
+- MVVM with Repository Layer
+- Retrofit - for network call
+- Kotlin Corotines for Threading
+- XML with Constraint Layout
+- Glide for load network Image
 
 ## API
 -  https://dummyjson.com/products?limit=10&skip=20
