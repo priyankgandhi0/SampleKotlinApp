@@ -4,14 +4,17 @@ import androidx.lifecycle.MutableLiveData
 import com.example.sampleapp.model.ProductModel
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 
 class LoginRepo : BaseRepo() {
 
-    fun getProducts() : MutableLiveData<ProductModel>{
+    fun getProducts(limit: Int, skip: Int): MutableLiveData<ProductModel>{
         val livedata: MutableLiveData<ProductModel> = MutableLiveData();
         GlobalScope.launch {
             try{
-                val result = apiRequests.getProducts(limit = 50, skip = 20)
+                val result = apiRequests.getProducts(limit, skip)
                 result.body()?.let {
                     //livedata.value = it
                     livedata.postValue(it)
@@ -23,5 +26,6 @@ class LoginRepo : BaseRepo() {
         }
         return livedata
     }
+
 }
 

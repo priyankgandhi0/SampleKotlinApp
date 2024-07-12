@@ -40,7 +40,6 @@ class ProductAdapter(var productList: ArrayList<Product>, var context: Context) 
     }
 
     fun addProducts(products: List<Product>) {
-        productList.clear()
         productList.addAll(products)
         notifyDataSetChanged()
     }
