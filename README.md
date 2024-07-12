@@ -1,6 +1,6 @@
 # Sample Android Kotlin App
 
-This project is a Android Kotlin application that demonstrates how to integrate a single listing API with pagination. It provides a simple UI to display a list of items fetched from the API.
+This project is a Android Kotlin application that demonstrates how to integrate a single listing API with pagination. It provides a simple UI to display a list of Products fetched from the API.
 
 
 ## Features
@@ -8,6 +8,9 @@ This project is a Android Kotlin application that demonstrates how to integrate 
 - Fetches data from a single listing API.
 - Implements pagination.
 - Provides a simple and intuitive UI for displaying the fetched data.
+
+#**API**
+-  https://dummyjson.com/products?limit=10&skip=20
 
 ## Requirements
 - Android Studio
