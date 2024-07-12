@@ -11,7 +11,7 @@ This project is a Android Kotlin application that demonstrates how to integrate 
 ## App Architrecture
 - MVVM with Repository Layer
 - Retrofit - for network call
-- Kotlin Corotines for Threading
+- Kotlin Coroutines for Threading
 - XML with Constraint Layout
 - Glide for load network Image
 
