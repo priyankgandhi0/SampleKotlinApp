@@ -16,83 +16,72 @@
         android:background="@drawable/home_card_bg"
         >
 
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivUserImage"
+            android:layout_width="@dimen/_55sdp"
+            android:layout_height="@dimen/_55sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:src="@drawable/dish"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+             />
+
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/cnItemTopBar"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="@dimen/_50sdp"
             android:layout_marginTop="@dimen/_5sdp"
+            app:layout_constraintStart_toEndOf="@+id/ivUserImage"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/ivUserImage"
-                android:layout_width="@dimen/_40sdp"
-                android:layout_height="@dimen/_40sdp"
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Jonathan Cooper"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp"
                 android:layout_marginStart="@dimen/_10sdp"
-                android:src="@drawable/user_dummy_image"
-                app:layout_constraintBottom_toBottomOf="parent"
+                android:textStyle="bold|italic"
+                app:layout_constraintBottom_toTopOf="@+id/tvDesc"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/tvName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/_10sdp"
-                android:text="Jonathan Cooper"
-                android:textColor="@color/black"
-                android:textSize="@dimen/_15sdp"
-                android:textStyle="bold|italic"
-                app:layout_constraintBottom_toTopOf="@+id/tvDesc"
-                app:layout_constraintStart_toEndOf="@+id/ivUserImage"
-                app:layout_constraintTop_toTopOf="@+id/ivUserImage" />
-
-            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvDesc"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="02 Nov 2022, 4:18 PM"
                 android:textColor="@color/grey_color"
                 app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/tvName"
                 app:layout_constraintTop_toBottomOf="@+id/tvName" />
 
-            <androidx.appcompat.widget.AppCompatImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="@dimen/_10sdp"
-                android:src="@drawable/ic_delete"
-                android:visibility="gone"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/descText"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
             android:layout_marginStart="@dimen/_10sdp"
-            android:layout_marginEnd="@dimen/_10sdp"
             android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
             android:textColor="@color/black"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivUserImage"
             app:layout_constraintTop_toBottomOf="@+id/cnItemTopBar" />
 
-        <androidx.appcompat.widget.AppCompatImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_10sdp"
-            android:layout_marginTop="@dimen/_10sdp"
-            android:layout_marginBottom="@dimen/_10sdp"
-            android:src="@drawable/ic_like"
-            android:visibility="gone"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/descText" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
