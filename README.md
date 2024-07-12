@@ -8,7 +8,7 @@ This project is a Android Kotlin application that demonstrates how to integrate 
 - Implements pagination.
 - Provides a simple and intuitive UI for displaying the fetched data.
 
-## App Architrecture
+## App Architecture
 - MVVM with Repository Layer
 - Retrofit - for network call
 - Kotlin Coroutines for Threading
