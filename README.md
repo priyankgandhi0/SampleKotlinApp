@@ -9,7 +9,7 @@ This project is a Android Kotlin application that demonstrates how to integrate 
 - Implements pagination.
 - Provides a simple and intuitive UI for displaying the fetched data.
 
-#**API**
+## API
 -  https://dummyjson.com/products?limit=10&skip=20
 
 ## Requirements
